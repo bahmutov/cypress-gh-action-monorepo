@@ -1,0 +1,24 @@
+{
+  "name": "cypress-gh-action-monorepo",
+  "version": "1.0.0",
+  "description": "Example running Cypress e2e tests using GitHub Action inside a monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "prettier --write 'e2e/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/cypress-gh-action-monorepo.git"
+  },
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/cypress-gh-action-monorepo/issues"
+  },
+  "homepage": "https://github.com/bahmutov/cypress-gh-action-monorepo#readme",
+  "devDependencies": {
+    "cypress": "3.6.1",
+    "prettier": "1.19.1"
+  }
+}
