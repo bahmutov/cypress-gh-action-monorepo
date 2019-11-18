@@ -1,0 +1,12 @@
+name: E2E
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Install dependencies
+        uses: cypress-io/github-action@2a1baeb
+        with:
+          runTests: false
+      - run: yarn lint
