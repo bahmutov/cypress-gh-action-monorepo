@@ -21,6 +21,6 @@ jobs:
           # to perform URL check
           start: npm start
           wait-on: http-get://localhost:5000
-          wait-on-timeout: 10 # seconds
+          wait-on-timeout: 40 # seconds
           # Cypress tests and config file are in "e2e" folder
           working-directory: e2e
