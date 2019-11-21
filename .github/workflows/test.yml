@@ -8,6 +8,7 @@ jobs:
       - name: Install dependencies
         uses: cypress-io/github-action@2a1baeb
         with:
+          # just perform install
           runTests: false
       - run: yarn lint
       - name: Run e2e tests
