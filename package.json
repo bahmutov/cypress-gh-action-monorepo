@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve public",
+    "start": "http-server -p 5000 public",
     "lint": "prettier --write 'e2e/**/*.js'"
   },
   "repository": {
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bahmutov/cypress-gh-action-monorepo#readme",
   "devDependencies": {
     "cypress": "3.6.1",
-    "prettier": "1.19.1",
-    "serve": "11.2.0"
+    "http-server": "0.11.1",
+    "prettier": "1.19.1"
   }
 }
