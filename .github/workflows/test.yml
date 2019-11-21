@@ -19,7 +19,7 @@ jobs:
           # start server and wait for N seconds for it to respond
           # before running tests
           start: npm start
-          wait-on: http://localhost:5000
+          wait-on: http-get://localhost:5000
           wait-on-timeout: 30
           # Cypress tests and config file are in "e2e" folder
           working-directory: e2e
