@@ -6,13 +6,13 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Install dependencies
-        uses: cypress-io/github-action@78d4d40
+        uses: cypress-io/github-action@v1
         with:
           # just perform install
           runTests: false
       - run: yarn lint
       - name: Run e2e tests
-        uses: cypress-io/github-action@78d4d40
+        uses: cypress-io/github-action@v1
         with:
           # we have already installed all dependencies above
           install: false
@@ -20,7 +20,7 @@ jobs:
           # before running tests. Use HTTP GET request via "http-get:/..."
           # to perform URL check
           start: npm start
-          wait-on: 'http://localhost:5000'
+          wait-on: 'http-get://localhost:5000'
           wait-on-timeout: 40 # seconds
           # Cypress tests and config file are in "e2e" folder
           working-directory: e2e
