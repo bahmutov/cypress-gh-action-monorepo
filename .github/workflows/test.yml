@@ -16,11 +16,9 @@ jobs:
         with:
           # we have already installed all dependencies above
           install: false
-          # start server and wait for N seconds for it to respond
-          # before running tests. Use HTTP GET request via "http-get:/..."
-          # to perform URL check
+          # start server and wait for N seconds for it to respond before running tests.
           start: npm start
-          wait-on: 'http-get://localhost:5000'
+          wait-on: 'http://localhost:5000'
           wait-on-timeout: 40 # seconds
           # Cypress tests and config file are in "e2e" folder
           working-directory: e2e
