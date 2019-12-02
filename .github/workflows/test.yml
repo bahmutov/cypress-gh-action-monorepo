@@ -6,14 +6,14 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Install dependencies
-        uses: cypress-io/github-action@2d51730
+        uses: cypress-io/github-action@593065e
         with:
           # just perform install in the root folder
           runTests: false
           working-directory: .
       - run: yarn lint
       - name: Run e2e tests
-        uses: cypress-io/github-action@2d51730
+        uses: cypress-io/github-action@593065e
         with:
           # we have already installed all dependencies above
           install: false
