@@ -4,7 +4,7 @@
   "description": "Example running Cypress e2e tests using GitHub Action inside a monorepo",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --config-file ./e2e/cypress.config.js",
+    "test": "cypress run --project e2e",
     "lint": "prettier --write 'e2e/**/*.js'"
   },
   "repository": {
