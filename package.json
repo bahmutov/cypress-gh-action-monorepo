@@ -4,7 +4,7 @@
   "description": "Example running Cypress e2e tests using GitHub Action inside a monorepo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cypress run --config-file ./e2e/cypress.config.js",
     "lint": "prettier --write 'e2e/**/*.js'"
   },
   "repository": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/bahmutov/cypress-gh-action-monorepo#readme",
   "devDependencies": {
-    "cypress": "5.6.0",
-    "prettier": "2.1.2"
+    "cypress": "12.2.0",
+    "prettier": "2.8.1"
   }
 }
