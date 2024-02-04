@@ -19,6 +19,6 @@
   "homepage": "https://github.com/bahmutov/cypress-gh-action-monorepo#readme",
   "devDependencies": {
     "cypress": "13.6.4",
-    "prettier": "3.2.4"
+    "prettier": "3.2.5"
   }
 }
