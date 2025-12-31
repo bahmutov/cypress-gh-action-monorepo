@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/bahmutov/cypress-gh-action-monorepo#readme",
   "devDependencies": {
-    "cypress": "15.7.1",
+    "cypress": "15.8.1",
     "prettier": "3.7.4"
   }
 }
